@@ -32,7 +32,9 @@ def single_slug(request, single_slug):
                       "sidebar": tutorials_from_series,
                       "this_tutorial_idx": this_tutorial_idx})
 
-
+    return render(request=request,
+                  template_name="main/account.html",
+                  )
     return HttpResponse(f"{single_slug} does not correspond to anything")
 
 
@@ -88,3 +90,9 @@ def login_request(request):
     return render(request,
                   "main/login.html",
                 {"form":form})
+
+def view_profile(request):
+    context = {
+        'user': request.user
+    }
+    return render(request, 'account.html', context)
