@@ -38,3 +38,16 @@ To use the blog application, follow these steps:
 ## Homepage of Blog
 
 ![home](Screenshots/home.png)
+
+## Account page
+
+![account](Screenshots/profile2.png)
+
+## Register and login page
+
+![register](Screenshots/register.png)
+![login](Screenshots/login.png)
+
+## Blog post details page
+
+![info](Screenshots/print.png)
