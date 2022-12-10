@@ -2,20 +2,36 @@
 
 {% block content %}
 
-    <div class="row">
-        {% for tut, partone in part_ones.items %}
 
-            <div class="col s12 m6 l4">
-                <a href="{{partone}}", style="color:#000">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <div class="card-title">{{tut.tutorial_series}}</div>
-                            <!--<p style="font-size:70%">Published {{tut.tutorial_published}}</p>-->
-                            <p>{{tut.series_summary}}</p>
-                        </div>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+<section class="details-card">
+    <div class="container">
+        <div class="row">
+            {% for tut, partone in part_ones.items %}
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/873/975/781/python-programming-minimalism-grey-technology-hd-wallpaper-preview.jpg" alt="">
+                        <span><h4>{{tut.tutorial_series}}</h4></span>
                     </div>
-                </a>
+                    <div class="card-desc">
+                        <h3>{{tut.series_summary}}</h3>
+                            <a href="{{partone}}" class="btn-card">Read</a>
+                    </div>
+                </div>
             </div>
-        {% endfor %}
-    </div>
+              {% endfor %}
+            </div>
+            </div>
+</section>
+
+
+
 {% endblock %}
