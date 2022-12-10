@@ -35,4 +35,6 @@ To use the blog application, follow these steps:
 
 * [Django](https://www.djangoproject.com/) - The web framework used
 
+## Homepage of Blog
 
+![home](Screenshots/home.png)
